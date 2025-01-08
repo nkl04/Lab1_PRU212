@@ -73,6 +73,7 @@ public class Player : MonoBehaviour
         if (timeCounter <= 0)
         {
             GameObject lazerGameObj = ObjectPooler.Instance.GetObjectFromPool(LazerPrefab.name);
+            if (lazerGameObj == null) return;
             lazerGameObj.transform.position = firePoint.position;
             lazerGameObj.transform.rotation = firePoint.rotation;
             lazerGameObj.SetActive(true);

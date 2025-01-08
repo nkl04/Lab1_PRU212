@@ -48,9 +48,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3014346594372371062, guid: 9984baa37dacf924a9cc8e90c9a90242, type: 3}
+      propertyPath: m_Radius
+      value: 0.43595132
+      objectReference: {fileID: 0}
+    - target: {fileID: 3014346594372371062, guid: 9984baa37dacf924a9cc8e90c9a90242, type: 3}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4309770834398244926, guid: 9984baa37dacf924a9cc8e90c9a90242, type: 3}
       propertyPath: m_Name
-      value: Asteroid_Base
+      value: Asteroid_Medium
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950541492458742907, guid: 9984baa37dacf924a9cc8e90c9a90242, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e5e6af01ad3142744a5c657677997b1b, type: 3}
+    - target: {fileID: 6950541492458742907, guid: 9984baa37dacf924a9cc8e90c9a90242, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950541492458742907, guid: 9984baa37dacf924a9cc8e90c9a90242, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950541492458742907, guid: 9984baa37dacf924a9cc8e90c9a90242, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

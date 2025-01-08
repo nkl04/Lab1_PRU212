@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Lab1_SpaceExplorer.sln"
+    "dotnet.defaultSolution": "Lab1_PRU212.sln"
 }

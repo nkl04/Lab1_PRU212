@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &5131411953582326476
+--- !u!1001 &8374935603258828969
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -50,28 +50,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3014346594372371062, guid: 9984baa37dacf924a9cc8e90c9a90242, type: 3}
       propertyPath: m_Radius
-      value: 1
+      value: 0.18766809
+      objectReference: {fileID: 0}
+    - target: {fileID: 3014346594372371062, guid: 9984baa37dacf924a9cc8e90c9a90242, type: 3}
+      propertyPath: m_Offset.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4309770834398244926, guid: 9984baa37dacf924a9cc8e90c9a90242, type: 3}
       propertyPath: m_Name
-      value: Asteroid_Large
+      value: Asteroid_Tiny
       objectReference: {fileID: 0}
     - target: {fileID: 6950541492458742907, guid: 9984baa37dacf924a9cc8e90c9a90242, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: ee80a879dcf1ae8449bbeed75537662e, type: 3}
-    - target: {fileID: 6950541492458742907, guid: 9984baa37dacf924a9cc8e90c9a90242, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6950541492458742907, guid: 9984baa37dacf924a9cc8e90c9a90242, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6950541492458742907, guid: 9984baa37dacf924a9cc8e90c9a90242, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: fc06e5c26298fef49b0d75549ca205c5, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
