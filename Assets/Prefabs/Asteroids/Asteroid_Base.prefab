@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 8890722151989198333}
   m_Layer: 3
   m_Name: Asteroid_Base
-  m_TagString: Untagged
+  m_TagString: Asteroid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -193,6 +193,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c46332f3df666c04d871f3d3d6d13f74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  damage: 1
   minRotationSpeed: 0
   maxRotationSpeed: 16
+  health: 0
   sprites: []
+  explosionParticle: {fileID: 0}

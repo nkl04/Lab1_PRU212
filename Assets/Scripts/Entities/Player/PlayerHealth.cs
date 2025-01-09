@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerHealth : MonoBehaviour, ILivingEntity
+public class PlayerHealth : MonoBehaviour, IDamageable
 {
     [Header("Health Info")]
     [SerializeField] private float maxHealth;
@@ -12,6 +12,14 @@ public class PlayerHealth : MonoBehaviour, ILivingEntity
     {
         Health = maxHealth;
     }
+
+    public void Die()
+    {
+        gameObject.SetActive(false);
+        DebugLog.LogError("You lose!");
+        DebugLog.LogGreen("Your score:" + ScoreSystem.Instance.Score);
+    }
+
     public void TakeDamage(float damage)
     {
         Health -= damage;
@@ -19,19 +27,6 @@ public class PlayerHealth : MonoBehaviour, ILivingEntity
         if (Health <= 0)
         {
             Die();
-        }
-    }
-    public void Die()
-    {
-        gameObject.SetActive(false);
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.GetComponent<Asteroid>() != null)
-        {
-            TakeDamage(maxHealth);
-            DebugLog.LogError("Lose Game");
         }
     }
 }

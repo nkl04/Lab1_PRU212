@@ -1953,10 +1953,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolList:
-  - tag: Single Lazer
-    prefab: {fileID: 3939311588558027670, guid: 084ef3f25e11e5c4b91b0de340009d26, type: 3}
-    size: 5
-    expandable: 1
   - tag: Star
     prefab: {fileID: 2151388790064444986, guid: 52cdf32cfe2da81478c86e6fc03d47a1, type: 3}
     size: 5
@@ -1975,6 +1971,10 @@ MonoBehaviour:
     expandable: 1
   - tag: Asteroid_Tiny
     prefab: {fileID: 5762037080916416663, guid: afebdf45edc2fd744a5eb3fb405a010d, type: 3}
+    size: 5
+    expandable: 1
+  - tag: Lazer_Single
+    prefab: {fileID: 3996366983490170186, guid: 7a995be83e6535c4dac0a7bb7a6ee4c4, type: 3}
     size: 5
     expandable: 1
 --- !u!1001 &1124877539
@@ -3256,10 +3256,14 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 075954116afc9724e8fd158099772e96, type: 3}
     - target: {fileID: 4629740300918602501, guid: ac61bef82745a584887e6dd5ee995dc8, type: 3}
       propertyPath: maxHealth
-      value: 100
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5132002051651719667, guid: ac61bef82745a584887e6dd5ee995dc8, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5132002051651719667, guid: ac61bef82745a584887e6dd5ee995dc8, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 6812979955308705122, guid: ac61bef82745a584887e6dd5ee995dc8, type: 3}
@@ -3277,7 +3281,7 @@ PrefabInstance:
     - target: {fileID: 6812979955308705122, guid: ac61bef82745a584887e6dd5ee995dc8, type: 3}
       propertyPath: LazerPrefab
       value: 
-      objectReference: {fileID: 3939311588558027670, guid: 084ef3f25e11e5c4b91b0de340009d26, type: 3}
+      objectReference: {fileID: 3996366983490170186, guid: 7a995be83e6535c4dac0a7bb7a6ee4c4, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

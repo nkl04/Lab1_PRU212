@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ScoreSystem : Singleton<ScoreSystem>
 {
+    public int Score => score;
     private int score = 0;
 
     public void AddScore(int score)
