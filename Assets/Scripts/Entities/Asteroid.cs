@@ -6,7 +6,10 @@ using UnityEngine;
 public class Asteroid : MonoBehaviour
 {
     [Header("Info")]
-    [SerializeField][Range(0, 20)] private float rotateSpeed;
+    [Header("Range Settings")]
+    [SerializeField][Range(0, 20)] private float minRotationSpeed = 0f;
+    [SerializeField][Range(0, 20)] private float maxRotationSpeed = 10f;
+    private float rotateSpeed;
 
 
     [Header("Visual")]
@@ -18,9 +21,16 @@ public class Asteroid : MonoBehaviour
     {
         child = transform.GetChild(0);
         child.GetComponent<SpriteRenderer>().sprite = sprites[UnityEngine.Random.Range(0, sprites.Count)];
+
+        RandomRotationSpeed();
     }
     private void Update()
     {
         transform.Rotate(Vector3.forward * Time.deltaTime * rotateSpeed);
+    }
+
+    private void RandomRotationSpeed()
+    {
+        rotateSpeed = UnityEngine.Random.Range(minRotationSpeed, maxRotationSpeed);
     }
 }

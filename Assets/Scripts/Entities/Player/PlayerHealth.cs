@@ -15,7 +15,7 @@ public class PlayerHealth : MonoBehaviour, ILivingEntity
     public void TakeDamage(float damage)
     {
         Health -= damage;
-        takeDamageEffect.Play();
+        if (takeDamageEffect != null) takeDamageEffect.Play();
         if (Health <= 0)
         {
             Die();
@@ -24,5 +24,14 @@ public class PlayerHealth : MonoBehaviour, ILivingEntity
     public void Die()
     {
         gameObject.SetActive(false);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.GetComponent<Asteroid>() != null)
+        {
+            TakeDamage(maxHealth);
+            DebugLog.LogError("Lose Game");
+        }
     }
 }

@@ -31,12 +31,8 @@ public class MainCamera : Singleton<MainCamera>
         minBounds = mainCamera.ViewportToWorldPoint(new Vector2(0f, 0f));
         maxBounds = mainCamera.ViewportToWorldPoint(new Vector2(1f, 1f));
 
-
         minMoveableBounds = new Vector2(minBounds.x + paddingLeft, minBounds.y + paddingDown);
         maxMoveableBounds = new Vector2(maxBounds.x - paddingRight, maxBounds.y - paddingTop);
-
-        DebugLog.LogGreen(MinMoveableBounds + "");
-        DebugLog.LogGreen(MaxMoveableBounds + "");
 
     }
 }
