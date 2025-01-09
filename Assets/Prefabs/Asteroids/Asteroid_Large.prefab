@@ -72,6 +72,42 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8890722151989198333, guid: 9984baa37dacf924a9cc8e90c9a90242, type: 3}
+      propertyPath: sprites.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8890722151989198333, guid: 9984baa37dacf924a9cc8e90c9a90242, type: 3}
+      propertyPath: sprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: ee80a879dcf1ae8449bbeed75537662e, type: 3}
+    - target: {fileID: 8890722151989198333, guid: 9984baa37dacf924a9cc8e90c9a90242, type: 3}
+      propertyPath: sprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 5b4e2d63d8b68d44084483c772adc512, type: 3}
+    - target: {fileID: 8890722151989198333, guid: 9984baa37dacf924a9cc8e90c9a90242, type: 3}
+      propertyPath: sprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 6a19837a9e1bff742a3cf2bf916f400e, type: 3}
+    - target: {fileID: 8890722151989198333, guid: 9984baa37dacf924a9cc8e90c9a90242, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dca8c06c5d1540d4aa2ec3e70452570d, type: 3}
+    - target: {fileID: 8890722151989198333, guid: 9984baa37dacf924a9cc8e90c9a90242, type: 3}
+      propertyPath: sprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: 00b7180357f084e43b8902f7bba52c7b, type: 3}
+    - target: {fileID: 8890722151989198333, guid: 9984baa37dacf924a9cc8e90c9a90242, type: 3}
+      propertyPath: sprites.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: 7f9693daedcf26d448845ad11cc22686, type: 3}
+    - target: {fileID: 8890722151989198333, guid: 9984baa37dacf924a9cc8e90c9a90242, type: 3}
+      propertyPath: sprites.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300000, guid: 3d13574294a4e864c9746c64dc74d7c0, type: 3}
+    - target: {fileID: 8890722151989198333, guid: 9984baa37dacf924a9cc8e90c9a90242, type: 3}
+      propertyPath: sprites.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: 771fe00367921094f925330826eea0fa, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -20,7 +20,6 @@ public class Player : MonoBehaviour
     public Rigidbody2D Rb2d { get; private set; }
     public Vector2 MovementInput { get; private set; }
     public bool IsMovementPressed { get; set; }
-    public bool IsFirePressed { get; set; }
     private StateMachine<PlayerState> stateMachine;
     private GameInput gameInput;
     private float timeCounter;
@@ -43,10 +42,6 @@ public class Player : MonoBehaviour
         gameInput.InputActions.Player.Move.performed += OnMoveInput;
 
         gameInput.InputActions.Player.Move.canceled += OnMoveInput;
-
-        gameInput.InputActions.Player.Fire.performed += OnFireInput;
-
-        gameInput.InputActions.Player.Fire.canceled += OnFireInput;
     }
 
     private void OnMoveInput(InputAction.CallbackContext context)
@@ -54,11 +49,6 @@ public class Player : MonoBehaviour
         MovementInput = context.ReadValue<Vector2>().normalized;
 
         IsMovementPressed = MovementInput.magnitude > 0;
-    }
-
-    private void OnFireInput(InputAction.CallbackContext context)
-    {
-        IsFirePressed = context.ReadValueAsButton();
     }
 
     private void Update()

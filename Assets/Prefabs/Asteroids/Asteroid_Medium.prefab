@@ -76,6 +76,26 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8890722151989198333, guid: 9984baa37dacf924a9cc8e90c9a90242, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8890722151989198333, guid: 9984baa37dacf924a9cc8e90c9a90242, type: 3}
+      propertyPath: sprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: e5e6af01ad3142744a5c657677997b1b, type: 3}
+    - target: {fileID: 8890722151989198333, guid: 9984baa37dacf924a9cc8e90c9a90242, type: 3}
+      propertyPath: sprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 92d0fd6ae61d015479ef59ea1563141f, type: 3}
+    - target: {fileID: 8890722151989198333, guid: 9984baa37dacf924a9cc8e90c9a90242, type: 3}
+      propertyPath: sprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: ac99eda99266571448d41c4ac198abd5, type: 3}
+    - target: {fileID: 8890722151989198333, guid: 9984baa37dacf924a9cc8e90c9a90242, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: 58b441c6987683c4fa7e435f1735914a, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
